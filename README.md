@@ -104,7 +104,7 @@ Clone this repository to your desired folder:
 
 ```sh
 cd my-folder
-git clone git@github.com:rmiyoyo/Math-Magicians.git
+git clone git@github.com:rmiyoyo/math-magicians.git
 ```
 
 ### Install
@@ -112,7 +112,7 @@ git clone git@github.com:rmiyoyo/Math-Magicians.git
 Install the prerequisites this project using:
 
 ```sh
-cd Math-Magicians
+cd math-magicians
 ```
 ```bash
 npm start
