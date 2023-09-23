@@ -26,6 +26,9 @@ const Calculator = () => {
       <NonumButton name="0" data={info} initInfo={initInfo} />
       <PeriodButton name="." data={info} initInfo={initInfo} />
       <SameButton name="=" data={info} initInfo={initInfo} />
+      {info.total === "Can't divide by 0." || info.next === "Can't divide by 0." ? (
+        <div className="error-message">Error: Division by zero is not allowed.</div>
+      ) : null}
     </div>
   );
 };
