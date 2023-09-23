@@ -17,8 +17,8 @@ div.wrapper {
   width: 30%;
   margin-top: 99px;
   display: grid;
-  grid-template-columns: repeat(, 1fr);
-  grid-gap: 0px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0;
 }
 
 div.enter-widget {
