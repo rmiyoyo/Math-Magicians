@@ -9,59 +9,55 @@ div.Calc {
   padding-bottom: 39px;
 }
 
-div.Calc h1 {
-  display: none;
-}
-
 div.wrapper {
-  width: 24%;
+  width: 26%;
   margin-top: 99px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(4, 25%);
+  grid-auto-rows: auto;
 }
 
-div.enter-widget {
-  grid-column: 1/5;
+div.input-box {
+  grid-column: span 4;
 }
 
-input.input {
-  width: 99%;
+input.input,
+::placeholder {
+  width: 99.99%;
   height: 49px;
-  background-color: #a9a9a9;
-  color: #fdf5e6;
+  background-color: #848492;
+  color: #f0f8ff;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1rem;
   border: none;
   text-align: right;
   padding-right: 2%;
 }
 
-::placeholder {
-  color: #fdf5e6;
-  font-weight: bold;
-  font-size: 2rem;
-  text-align: right;
-  padding-right: 0.9%;
+input.input:focus {
+  padding-right: 2%;
 }
 
-div.zero-class {
+button.nonum {
   grid-column: span 2;
 }
 
-div.figure-button button,
-div.Maths-Widgets button,
-div.arithmetic-device-container button,
-div.manipulate-button button,
-div.period-widget button,
-div.rate-widget button {
-  width: 99%;
+.button {
+  width: 99.9%;
   height: 49px;
   font-weight: bold;
-  font-size: 2rem;
-  border: 2px solid #a9a9a9;
+  font-size: 1rem;
+  border: 1px solid #848492;
 }
 
-div.manipulate-button button {
-  background-color: #ffa500;
+.button:hover {
+  background-color: #848492;
+}
+
+.split,
+.product,
+.remove,
+.plus,
+.same {
+  background-color: #ee8a39;
 }
