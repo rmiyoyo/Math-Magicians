@@ -61,3 +61,10 @@ button.nonum {
 .same {
   background-color: #ee8a39;
 }
+
+p.fetched-data {
+  margin-top: 19px;
+  width: 24%;
+  text-align: justify;
+  font-size: 1.5rem;
+}
