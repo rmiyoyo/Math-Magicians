@@ -1,7 +1,7 @@
 import './App.css';
 import MathApp from './components/Calculator';
 
-function App() {
+function Calc() {
   return (
     <div className="Calc">
       <h1>Math Magicians</h1>
@@ -10,4 +10,4 @@ function App() {
   );
 }
 
-export default App;
+export default Calc;
