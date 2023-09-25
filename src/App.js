@@ -5,7 +5,7 @@ import ShowQuotes from './components/ShowQuotes';
 function Calc() {
   return (
     <div className="Calc">
-      <h1>Math Magicians</h1>
+      <h1>Math Magicians App</h1>
       <MathApp />
       <ShowQuotes />
     </div>
