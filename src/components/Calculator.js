@@ -1,34 +1,40 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
+import '../styles/Calc.css';
 
 const Calculator = () => {
   const [info, initInfo] = useState({ total: '', next: '', operation: '' });
   return (
-    <div className="wrapper">
-      <Entry data={info} />
-      <AllClearButton name="AC" data={info} initInfo={initInfo} />
-      <AddRemoveButton name="+/-" data={info} initInfo={initInfo} />
-      <RemainderButton name="%" data={info} initInfo={initInfo} />
-      <SplitButton name="÷" data={info} initInfo={initInfo} />
-      <SevenButton name="7" data={info} initInfo={initInfo} />
-      <EightButton name="8" data={info} initInfo={initInfo} />
-      <NineButton name="9" data={info} initInfo={initInfo} />
-      <ProductButton name="x" data={info} initInfo={initInfo} />
-      <FourButton name="4" data={info} initInfo={initInfo} />
-      <FiveButton name="5" data={info} initInfo={initInfo} />
-      <SixButton name="6" data={info} initInfo={initInfo} />
-      <RemoveButton name="-" data={info} initInfo={initInfo} />
-      <OneButton name="1" data={info} initInfo={initInfo} />
-      <TwoButton name="2" data={info} initInfo={initInfo} />
-      <ThreeButton name="3" data={info} initInfo={initInfo} />
-      <PlusButton name="+" data={info} initInfo={initInfo} />
-      <NonumButton name="0" data={info} initInfo={initInfo} />
-      <PeriodButton name="." data={info} initInfo={initInfo} />
-      <SameButton name="=" data={info} initInfo={initInfo} />
-      {info.total === "Can't divide by 0." || info.next === "Can't divide by 0." ? (
-        <div className="error-message">Error: Division by zero is not allowed.</div>
-      ) : null}
+    <div className="calculator-wrapper">
+      <div className="left-panel">
+        <h1 className="try">Lets do some Math!</h1>
+      </div>
+      <div className="right-panel">
+        <Entry data={info} />
+        <AllClearButton name="AC" data={info} initInfo={initInfo} />
+        <AddRemoveButton name="+/-" data={info} initInfo={initInfo} />
+        <RemainderButton name="%" data={info} initInfo={initInfo} />
+        <SplitButton name="÷" data={info} initInfo={initInfo} />
+        <SevenButton name="7" data={info} initInfo={initInfo} />
+        <EightButton name="8" data={info} initInfo={initInfo} />
+        <NineButton name="9" data={info} initInfo={initInfo} />
+        <ProductButton name="x" data={info} initInfo={initInfo} />
+        <FourButton name="4" data={info} initInfo={initInfo} />
+        <FiveButton name="5" data={info} initInfo={initInfo} />
+        <SixButton name="6" data={info} initInfo={initInfo} />
+        <RemoveButton name="-" data={info} initInfo={initInfo} />
+        <OneButton name="1" data={info} initInfo={initInfo} />
+        <TwoButton name="2" data={info} initInfo={initInfo} />
+        <ThreeButton name="3" data={info} initInfo={initInfo} />
+        <PlusButton name="+" data={info} initInfo={initInfo} />
+        <NonumButton name="0" data={info} initInfo={initInfo} />
+        <PeriodButton name="." data={info} initInfo={initInfo} />
+        <SameButton name="=" data={info} initInfo={initInfo} />
+        {info.total === "Can't divide by 0." || info.next === "Can't divide by 0." ? (
+          <div className="error-message">Error: Division by zero is not allowed.</div>
+        ) : null}
+      </div>
     </div>
   );
 };

@@ -120,7 +120,7 @@ npx hint .
 npx stylelint "**/*.{css,scss}"
 ```
 ```bash
-npx eslint .
+npx eslint "**/*.{js,jsx}"
 ```
 
 <!--

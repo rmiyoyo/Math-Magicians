@@ -1,0 +1,97 @@
+div.navDiv {
+  width: 100%;
+}
+
+div.navDiv nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  background-color: rgb(47, 79, 79);
+  font-size: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+div.navDiv nav div.iconArea {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  margin-left: 1%;
+}
+
+div.navDiv nav div.iconArea img {
+  width: 100%;
+  max-width: 250px;
+}
+
+div.navDiv nav ul {
+  display: flex;
+  list-style: none;
+  width: 55%;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+div.navDiv nav ul li a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: rgb(175, 238, 238);
+  padding: 10px;
+  transition: border-bottom 0.3s ease, font-size 0.3s ease;
+}
+
+div.navDiv nav ul li a:hover {
+  border-bottom: 2px solid #f90;
+  font-size: 1.1rem;
+  transition: border-bottom 0.3s ease, font-size 0.3s ease;
+}
+
+@media only screen and (min-width: 425px) {
+  div.navDiv nav div.iconArea {
+    width: 30%;
+    margin-left: 3%;
+  }
+
+  div.navDiv nav ul {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  div.navDiv nav div.iconArea {
+    width: 20%;
+    margin-left: 3%;
+  }
+
+  div.navDiv nav ul {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  div.navDiv nav div.iconArea {
+    width: 15%;
+    margin-left: 3%;
+  }
+
+  div.navDiv nav ul {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  div.navDiv nav div.iconArea {
+    width: 10%;
+    margin-left: 3%;
+  }
+
+  div.navDiv nav ul {
+    width: 25%;
+  }
+}
